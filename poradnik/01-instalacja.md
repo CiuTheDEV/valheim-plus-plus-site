@@ -1,6 +1,6 @@
 # Instalacja i pierwszy start
 
-Pobierz launcher, wskaż Valheim i zainstaluj paczkę. Poniżej znajdziesz miejsca, w które trzeba kliknąć.
+Od pobrania launchera do pierwszej gry — krok po kroku.
 
 ## 1. Pobierz i uruchom launcher
 

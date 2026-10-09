@@ -9,3 +9,8 @@ export function initViewer(selector,onOpen=()=>{},onClose=()=>{}){
  dialog.addEventListener('close',()=>{onClose();trigger?.focus();});
 }
 initViewer('.guide-shot');
+// Delegation also covers images created later inside the screenshot viewer.
+document.addEventListener('dragstart',event=>{
+ if(event.target instanceof HTMLImageElement)event.preventDefault();
+});
+document.querySelectorAll('img').forEach(image=>{image.draggable=false;});

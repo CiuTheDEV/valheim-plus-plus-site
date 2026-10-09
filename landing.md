@@ -36,30 +36,30 @@ Pobierz paczkę, sprawdź zmiany i uruchom grę. Aktualizacje masz pod ręką �
 
 ### Pobierz
 
-Zapisz launcher na komputerze i uruchom go.
+Pobierz plik **ValheimPlusPlus.exe** i uruchom go. Launcher nie wymaga osobnej instalacji.
 
 ### Wskaż grę
 
-Kliknij „Znajdź grę” i wybierz Valheim. Launcher poprowadzi Cię przez konfigurację.
+Kliknij **Znajdź grę**. W ustawieniach użyj **Znajdź automatycznie** albo wskaż plik `valheim.exe`, a następnie zapisz ustawienia.
 
 ### Zainstaluj i graj
 
-Poczekaj, aż paczka będzie gotowa. Potem kliknij „Graj”.
+Kliknij **Zainstaluj paczkę** i poczekaj na zakończenie pobierania oraz instalacji. Gdy launcher pokaże gotowość, kliknij **Graj**.
 
 ## Pomoc
 
-### Instalacja i pierwszy start
+### Pierwsze uruchomienie
 
-Nie wiesz, gdzie wskazać grę albo co kliknąć dalej? [Zobacz instalację krok po kroku →](01-instalacja.html)
+Wskaż plik `valheim.exe` w ustawieniach launchera, zapisz wybór i kliknij **Zainstaluj paczkę**. [Instrukcja pierwszego uruchomienia →](01-instalacja.html)
 
-### Problemy z uruchomieniem
+### Błędy i naprawa paczki
 
-Gra nie startuje lub paczka zgłasza błąd? [Sprawdź, od czego zacząć →](05-pomoc.html)
+Brakuje plików paczki? Użyj naprawy w launcherze — uzupełnia brakujące pliki bez usuwania dodatkowych danych. Przy innym błędzie skopiuj raport z komunikatu. [Rozwiązywanie problemów →](05-pomoc.html)
 
-### Zmiana wersji
+### Wybór wersji
 
-Chcesz wrócić do starszego wydania albo przetestować betę? [Wybór wersji i powrót na najnowszą →](03-mody.html)
+W ustawieniach, w zakładce **Aktualizacje**, wybierz starsze wydanie lub betę. Opis zmian sprawdzisz przed instalacją. [Zmiana wersji krok po kroku →](03-mody.html)
 
-### Kopie i własne dane
+### Kopie i dane gracza
 
-Poprzednia paczka jest zabezpieczana automatycznie, a chronione dane gracza mają historię do 10 kopii. [Kopie zapasowe i dane gracza →](04-wspolna-gra.html)
+Przy aktualizacji launcher tworzy kopię poprzedniej paczki. Chronione dane gracza zachowuje osobno w historii ostatnich 10 aktualizacji. [Jak działają kopie i ochrona danych →](04-wspolna-gra.html)

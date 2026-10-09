@@ -1,6 +1,6 @@
 # Problemy z uruchomieniem
 
-Wybierz sytuację, która pasuje do tego, co widzisz. Nie usuwaj od razu całej paczki — zachowaj komunikat błędu i własne dane.
+Znajdź swój problem i sprawdź zalecane rozwiązanie. Zanim zmienisz pliki, zachowaj komunikat błędu i własne dane.
 
 ## Launcher nie znajduje gry
 

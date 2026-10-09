@@ -40,6 +40,10 @@ test('nowy rozdział trafia do menu, linki Markdown działają w podfolderze', (
     const page = readFileSync(path.join(root, 'dist/01-start.html'), 'utf8');
     assert.match(page, /href="02-mody.html#lista"/);
     assert.match(page, /Mody i łódź/);
+    assert.match(page, /class="vh-guide"/);
+    assert.match(page, /assets\/guide.css/);
+    assert.match(page, /class="guide-footer"/);
+    assert.match(readFileSync(path.join(root, 'dist/02-mody.html'), 'utf8'), /class="guide-step"/);
     assert.doesNotMatch(page, /href="\//);
     assert.match(readFileSync(path.join(root, 'dist/02-mody.html'), 'utf8'), /id="lista"/);
     const landing = readFileSync(path.join(root, 'dist/index.html'), 'utf8');

@@ -23,6 +23,12 @@ if(gallery){
  initViewer('[data-screen]',()=>model.block('dialog',true),()=>model.block('dialog',false));render();
 }
 const header=document.querySelector('.site-header');
+if(header&&!document.body.classList.contains('history')){
+ let headerFrame;
+ const shade=()=>{headerFrame=null;const distance=Math.max(500,(document.querySelector('.hero')?.offsetHeight||650)-header.offsetHeight);const progress=Math.min(1,Math.max(0,scrollY-80)/distance);header.style.setProperty('--header-opacity',String(.16+.8*progress));};
+ window.addEventListener('scroll',()=>{if(headerFrame==null)headerFrame=requestAnimationFrame(shade);},{passive:true});
+ window.addEventListener('pageshow',shade);shade();
+}
 if(header){const size=()=>document.documentElement.style.setProperty('--header-height',header.getBoundingClientRect().height+'px');new ResizeObserver(size).observe(header);size();}
 let frame;
 const toggle=document.querySelector('[data-scroll-toggle]');
@@ -31,7 +37,7 @@ toggle?.addEventListener('click',()=>{scrollPreference=scrollEnabled(scrollPrefe
 const stop=()=>cancelAnimationFrame(frame);window.addEventListener('wheel',stop,{passive:true});window.addEventListener('touchstart',stop,{passive:true});window.addEventListener('keydown',e=>{if(['Escape','PageDown','PageUp','ArrowDown','ArrowUp','Home','End'].includes(e.key))stop();});
 for(const link of document.querySelectorAll('a[href^="#"]'))link.addEventListener('click',event=>{
  const target=document.getElementById(link.getAttribute('href').slice(1));if(!target)return;
- event.preventDefault();history.pushState(null,'',link.getAttribute('href'));stop();const from=scrollY,to=Math.max(0,Math.min(document.documentElement.scrollHeight-innerHeight,from+target.getBoundingClientRect().top-(header?.getBoundingClientRect().height||0)-24));
+ event.preventDefault();history.pushState(null,'',link.getAttribute('href'));stop();const from=scrollY,to=target.id==='page-top'?0:Math.max(0,Math.min(document.documentElement.scrollHeight-innerHeight,from+target.getBoundingClientRect().top-(header?.getBoundingClientRect().height||0)-24));
  if(!scrollEnabled(scrollPreference,motion.matches)){window.scrollTo({top:to,behavior:'instant'});return;}
  const started=performance.now();const tick=time=>{const progress=Math.min(1,(time-started)/650);window.scrollTo({top:scrollPosition(from,to,progress),behavior:'instant'});if(progress<1)frame=requestAnimationFrame(tick);};frame=requestAnimationFrame(tick);
 });
