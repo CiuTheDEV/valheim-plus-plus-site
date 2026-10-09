@@ -1,0 +1,335 @@
+{
+  "schema": 1,
+  "fetchedAt": "2026-10-07T07:25:40.532Z",
+  "releases": [
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.9/modpack.json",
+          "name": "modpack.json",
+          "size": 418,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.9/valheim-plus-plus-0.3.9.zip",
+          "name": "valheim-plus-plus-0.3.9.zip",
+          "size": 672180324,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.9\n\nBrak zmian zawartości względem ostatniego lokalnego wydania.",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.9",
+      "name": "Valheim ++ modpack-v0.3.9",
+      "prerelease": false,
+      "published_at": "2026-10-07T06:13:56Z",
+      "tag_name": "modpack-v0.3.9"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.6/valheim-plus-plus-0.3.6.zip",
+          "name": "valheim-plus-plus-0.3.6.zip",
+          "size": 658530022,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.6/modpack.json",
+          "name": "modpack.json",
+          "size": 636,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.6\n\n## Zmiany konfiguracji\n- Aktualizacja konfiguracji: BepInEx/config/advize.StumpsRegrow.cfg\n- Usunięto: BepInEx/config/Recycle\\_N\\_Reclaim\\_player\\_-331236210.dat\n- Dodano: BepInEx/config/shudnal.CircletExtended.cfg\n\n## Pozostałe zmiany\n- Zmieniono: .pack-policy.json\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.6",
+      "name": "Valheim ++ modpack-v0.3.6",
+      "prerelease": false,
+      "published_at": "2026-10-06T21:08:02Z",
+      "tag_name": "modpack-v0.3.6"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.5/modpack.json",
+          "name": "modpack.json",
+          "size": 1304,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.5/valheim-plus-plus-0.3.5.zip",
+          "name": "valheim-plus-plus-0.3.5.zip",
+          "size": 658527099,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.5\n\n## Zmiany plików\n- Dodano: BepInEx/config/com.jekkle.valheim.carturmappins.V1ModsTest--2979705294.test.styles.txt\n- Dodano: BepInEx/config/com.maxsch.valheim.vnei.blacklist.txt\n- Dodano: BepInEx/config/Recycle_N_Reclaim_player_-331236210.dat\n- Dodano: BepInEx/config/StoreAndCraft.favorites.txt\n- Zmieniono: .pack-policy.json\n- Usunięto: BepInEx/config/Searica.Valheim.TerrainTools.cfg\n- Usunięto: BepInEx/config/shudnal.CircletExtended.cfg\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/CHANGELOG.md\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/icon.png\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/manifest.json\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/PolishLocalizationBridge.dll\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/README.md\n- Usunięto: BepInEx/plugins/Searica-AdvancedTerrainModifiers/TerrainTools.dll",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.5",
+      "name": "Valheim ++ modpack-v0.3.5",
+      "prerelease": false,
+      "published_at": "2026-10-06T09:19:57Z",
+      "tag_name": "modpack-v0.3.5"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.4/valheim-plus-plus-0.3.4.zip",
+          "name": "valheim-plus-plus-0.3.4.zip",
+          "size": 658831829,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.4/modpack.json",
+          "name": "modpack.json",
+          "size": 4068,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.4\n\n## Zmiany plików\n- Zmieniono: BepInEx/config/binds.yaml\n- Dodano: BepInEx/config/carturpins_labels.txt\n- Dodano: BepInEx/config/carturpins_names_polish.txt\n- Zmieniono: BepInEx/config/com.jekkle.valheim.carturmappins.cfg\n- Zmieniono: BepInEx/config/com.maxsch.valheim.vnei.cfg\n- Zmieniono: BepInEx/config/MagicMike.MyDirtyHoe.cfg\n- Zmieniono: BepInEx/config/MyDirtyHoe/Translations/English/MyDirtyHoe.json\n- Zmieniono: BepInEx/config/Raelaziel.OdinHorse.cfg\n- Zmieniono: BepInEx/config/Raelaziel.OdinHorse.MountSeats.yml\n- Dodano: BepInEx/config/Raelaziel.OdinHorse.MountSeats.yml.bak\n- Zmieniono: BepInEx/config/_shudnal.ConfigurationManager.cfg\n- Zmieniono: BepInEx/plugins/Cartur-Carturs_Map_Pins/CarturMapPins.dll\n- Dodano: BepInEx/plugins/Cartur-Carturs_Map_Pins/CarturMapPins.Polish.dll.old\n- Zmieniono: BepInEx/plugins/Cartur-Carturs_Map_Pins/CHANGELOG.md\n- Zmieniono: BepInEx/plugins/Cartur-Carturs_Map_Pins/manifest.json\n- Zmieniono: BepInEx/plugins/Cartur-Carturs_Map_Pins/README.md\n- Zmieniono: BepInEx/plugins/MagicMike-MyDirtyHoe/CHANGELOG.md\n- Zmieniono: BepInEx/plugins/MagicMike-MyDirtyHoe/icon.png\n- Zmieniono: BepInEx/plugins/MagicMike-MyDirtyHoe/manifest.json\n- Zmieniono: BepInEx/plugins/MagicMike-MyDirtyHoe/MyDirtyHoe.dll\n- Zmieniono: BepInEx/plugins/MagicMike-MyDirtyHoe/README.md\n- Zmieniono: BepInEx/plugins/OdinPlus-OdinHorse/CHANGELOG.md\n- Zmieniono: BepInEx/plugins/OdinPlus-OdinHorse/manifest.json\n- Zmieniono: BepInEx/plugins/OdinPlus-OdinHorse/OdinHorse.dll\n- Zmieniono: .pack-policy.json\n- Usunięto: BepInEx/config/Azumatt.AzuCraftyBoxes.cfg\n- Usunięto: BepInEx/config/Azumatt.AzuCraftyBoxes.yml\n- Usunięto: BepInEx/config/Azumatt.PetPantry.cfg\n- Usunięto: BepInEx/config/blacks7ar.LazyVikings.cfg\n- Usunięto: BepInEx/config/infinity_hammer.cfg\n- Usunięto: BepInEx/config/infinity_tools.yaml\n- Usunięto: BepInEx/config/M2Valheim.SkillsReworked.cfg\n- Usunięto: BepInEx/config/M2Valheim.TalentTree.cfg\n- Usunięto: BepInEx/config/server_devcommands.cfg\n- Usunięto: BepInEx/config/StoreAndCraft.favorites.txt\n- Usunięto: BepInEx/plugins/Azumatt-AzuCraftyBoxes/PolishLocalizationBridge.dll\n- Usunięto: BepInEx/plugins/Azumatt-Logo_Changer/DefaultLogos.zip\n- Usunięto: BepInEx/plugins/Cartur-Carturs_Map_Pins/CarturMapPins.Polish.dll\n- Usunięto: BepInEx/plugins/JereKuusela-Infinity_Hammer/CHANGELOG.md\n- Usunięto: BepInEx/plugins/JereKuusela-Infinity_Hammer/icon.png\n- Usunięto: BepInEx/plugins/JereKuusela-Infinity_Hammer/InfinityHammer.dll\n- Usunięto: BepInEx/plugins/JereKuusela-Infinity_Hammer/manifest.json\n- Usunięto: BepInEx/plugins/JereKuusela-Infinity_Hammer/README.md\n- Usunięto: BepInEx/plugins/JereKuusela-Server_devcommands/CHANGELOG.md\n- Usunięto: BepInEx/plugins/JereKuusela-Server_devcommands/icon.png\n- Usunięto: BepInEx/plugins/JereKuusela-Server_devcommands/manifest.json\n- Usunięto: BepInEx/plugins/JereKuusela-Server_devcommands/README.md\n- Usunięto: BepInEx/plugins/JereKuusela-Server_devcommands/ServerDevcommands.dll\n- Usunięto: BepInEx/plugins/JereKuusela-World_Edit_Commands/CHANGELOG.md\n- Usunięto: BepInEx/plugins/JereKuusela-World_Edit_Commands/icon.png\n- Usunięto: BepInEx/plugins/JereKuusela-World_Edit_Commands/manifest.json\n- Usunięto: BepInEx/plugins/JereKuusela-World_Edit_Commands/README.md\n- Usunięto: BepInEx/plugins/JereKuusela-World_Edit_Commands/WorldEditCommands.dll\n- Usunięto: BepInEx/plugins/MagicMike-MyDirtyHoe/Translations/Polish/MyDirtyHoe.json\n- Usunięto: BepInEx/plugins/VHCenter-StoreAndCraftAutomation/StoreAndCraft.Automation.dll",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.4",
+      "name": "Valheim ++ modpack-v0.3.4",
+      "prerelease": false,
+      "published_at": "2026-10-06T08:54:34Z",
+      "tag_name": "modpack-v0.3.4"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.3/valheim-plus-plus-0.3.3.zip",
+          "name": "valheim-plus-plus-0.3.3.zip",
+          "size": 660731045,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.3/modpack.json",
+          "name": "modpack.json",
+          "size": 577,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.3\n\n## Zmiany plików\n- Zmieniono: .pack-policy.json\n- Usunięto: BepInEx/config/com.jekkle.valheim.carturmappins.V1ModsTest--2979705294.test.styles.txt\n- Usunięto: BepInEx/config/com.maxsch.valheim.vnei.blacklist.txt",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.3",
+      "name": "Valheim ++ modpack-v0.3.3",
+      "prerelease": false,
+      "published_at": "2026-10-06T08:09:04Z",
+      "tag_name": "modpack-v0.3.3"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.10/modpack.json",
+          "name": "modpack.json",
+          "size": 390,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.10/valheim-plus-plus-0.3.10.zip",
+          "name": "valheim-plus-plus-0.3.10.zip",
+          "size": 672036570,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ 0.3.10\n\n## Usunięte mody\n- CycleChests\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.10",
+      "name": "Valheim ++ modpack-v0.3.10",
+      "prerelease": false,
+      "published_at": "2026-10-07T06:41:39Z",
+      "tag_name": "modpack-v0.3.10"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.1/valheim-plus-plus-0.3.1.zip",
+          "name": "valheim-plus-plus-0.3.1.zip",
+          "size": 651155998,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-v0.3.1/modpack.json",
+          "name": "modpack.json",
+          "size": 1640,
+          "state": "uploaded"
+        }
+      ],
+      "body": "## Valheim ++ 0.3.0\n\n### Nowa zawartość\n\n- Rozbudowano wyposażenie oraz rozwój walki dzięki modom ValheimArmory, Warfare, Armory i Wizardry.\n- Dodano nowych przeciwników i minibossów z moda Monstrum.\n- Dodano plecaki rozwijane wraz z postępem gry dzięki AdventureBackpacks.\n- Rozbudowano gotowanie, uprawy i dostępne produkty za pomocą BoneAppetit oraz Valharvest.\n- Dodano nowe elementy budowlane i obozowe z OdinArchitect, MissingPieces oraz OdinCampsite.\n- Dodano konie, które można oswajać, dosiadać, hodować i wyposażać dzięki OdinHorse.\n- Dodano beczki do przechowywania żywności i surowców roślinnych przez OdinsFoodBarrels.\n- Dodano automatyczne karmienie oswojonych zwierząt z pobliskich pojemników dzięki PetPantry.\n- Dodano VNEI — przeglądarkę przedmiotów i receptur dostępną bezpośrednio w grze.\n\n### Aktualizacje i lokalizacja\n\n- Zaktualizowano CycleChests z wersji 1.0.0 do 1.0.1.\n- Dodano polskie tłumaczenia i mostki lokalizacyjne dla wybranych modów.\n\nW tej wersji nie usunięto żadnego moda obecnego w poprzednim wydaniu.\n\n### Instalacja\n\nZamknij grę, a następnie zainstaluj lub zaktualizuj paczkę za pomocą launchera Valheim ++.\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-v0.3.1",
+      "name": "Valheim ++ 0.3.1",
+      "prerelease": false,
+      "published_at": "2026-09-23T19:48:51Z",
+      "tag_name": "modpack-v0.3.1"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-stable/valheim-plus-plus-0.2.0.zip",
+          "name": "valheim-plus-plus-0.2.0.zip",
+          "size": 19320630,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/modpack-stable/latest.json",
+          "name": "latest.json",
+          "size": 1522,
+          "state": "uploaded"
+        }
+      ],
+      "body": "## Valheim ++ 0.2.0 — pierwsze wydanie\r\n\r\nPierwsze oficjalne wydanie modpaka Valheim ++.\r\n\r\n### Zawartość paczki\r\n\r\n- Ulepszenia budowania i terenu: PlanBuild, Build Camera, Advanced Terrain Modifiers, MyDirtyHoe oraz Plant Easily.\r\n- Ulepszenia upraw i świata: Plant Everything oraz Stumps Regrow.\r\n- Ekwipunek, wytwarzanie i magazynowanie: AzuExtendedPlayerInventory, AAA Crafting, AzuCraftyBoxes, Smarter Containers, Cycle Chests, Quick Stack / Store / Sort / Trash / Restock oraz Recycle & Reclaim.\r\n- Rozgrywka i automatyzacja: Hunting, Impactful Skills, Better Archery, Currency Pocket, Lazy Vikings oraz True Instant Loot Drop.\r\n- Budowle i podróże: Advanced Portals, XPortal oraz Longship Upgrades.\r\n- Interfejs i wygoda: MyLittleUI, Configuration Manager, HUD Compass, Cartur's Map Pins, Mouse Tweaks, Hip Lantern oraz Circlet Extended.\r\n- Dodatkowe ustawienia gry: ValheimPlus, Conditional Config Sync oraz obsługa osiągnięć przez Unshamed.\r\n\r\nPaczka zawiera także wymagane pliki BepInEx, loader oraz przygotowane konfiguracje modów.\r\n\r\n### Instalacja\r\n\r\nZainstaluj paczkę przez launcher Valheim ++. Przed instalacją lub aktualizacją zamknij grę.\r\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/modpack-stable",
+      "name": "Valheim ++ 0.2.0",
+      "prerelease": false,
+      "published_at": "2026-09-18T08:28:16Z",
+      "tag_name": "modpack-stable"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.1/launcher.json",
+          "name": "launcher.json",
+          "size": 1052,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.1/ValheimPlusPlus-Launcher-0.20.1-Windows-x64.zip",
+          "name": "ValheimPlusPlus-Launcher-0.20.1-Windows-x64.zip",
+          "size": 82277999,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.1/ValheimPlusPlus.exe",
+          "name": "ValheimPlusPlus.exe",
+          "size": 88067863,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ Launcher 0.20.1\r\n\r\n## Co nowego\r\n- Launcher zachowuje dodatkowe dane gracza zgodnie z regułami dołączonymi do paczki, także przy cofaniu wersji i przywracaniu kopii. Usunięcie reguły w kolejnej paczce nie usuwa historii ochrony profilu.\r\n- Paczki z nowymi regułami ochrony wymagają launchera 0.20.1 lub nowszego. Niepoprawne metadane i niedozwolone ścieżki blokują instalację przed zmianą aktywnego profilu.\r\n- Bezpieczniejsza aktywacja paczki: starszy backup trafia do archiwum kopii przed podmianą profilu, zamiast być usuwany po aktywacji. Blokada plików nie pozostawia nieudanej operacji z nową aktywną wersją.",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/launcher-v0.20.1",
+      "name": "Valheim ++ launcher-v0.20.1",
+      "prerelease": false,
+      "published_at": "2026-10-07T06:04:13Z",
+      "tag_name": "launcher-v0.20.1"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.0/ValheimPlusPlus-Launcher-0.20.0-Windows-x64.zip",
+          "name": "ValheimPlusPlus-Launcher-0.20.0-Windows-x64.zip",
+          "size": 82264798,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.0/launcher.json",
+          "name": "launcher.json",
+          "size": 1585,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.20.0/ValheimPlusPlus.exe",
+          "name": "ValheimPlusPlus.exe",
+          "size": 88059084,
+          "state": "uploaded"
+        }
+      ],
+      "body": "# Valheim ++ Launcher 0.20.0\r\n\r\n## Co nowego\r\n- Czytelniejsze pierwsze uruchomienie i wskazówki konfiguracji paczki.\r\n- Wybór stabilnej wersji, bety i starszych wydań przez przyciski oraz karty z opisami Markdown.\r\n- Nowe okno trybu developerskiego z klawiaturą PIN.\r\n- Pierścień pobierania odpowiada rzeczywistemu procentowi pobranej paczki.\r\n- Usprawnione lokalne przygotowanie wydań i automatyczne szkice opisów zmian.\r\n- Spójne komunikaty stanu, czytelniejsze aktualizacje i oznaczenie bety, uproszczone ustawienia aplikacji oraz podpowiedzi kopii zapasowych. Większe i bardziej kontrastowe teksty pomocnicze.\r\n- Ochrona niezapisanych ustawień z wyborem Zapisz/Odrzuć/Anuluj, jasne zależności automatycznych aktualizacji i oddzielenie natychmiastowych działań. Wygodniejszy układ, status sprawdzania launchera, obsługa Escape i widoczny fokus klawiatury oraz uproszczone opisy źródła i instalacji lokalnej.\r\n- Znaczniki Cartur’s Map Pins pozostają aktualne podczas aktualizacji, cofania wersji i przywracania kopii paczki. Eksport pomija prywatne pliki znaczników, a instalacja ignoruje je także w starszych ZIP-ach.\r\n- Podświetlenie fokusu przycisków jest domyślnie wyłączone. Włącza się po użyciu klawiatury i znika po kliknięciu myszą, również w oknach potwierdzeń.",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/launcher-v0.20.0",
+      "name": "Valheim ++ Launcher 0.20.0",
+      "prerelease": false,
+      "published_at": "2026-10-05T18:50:26Z",
+      "tag_name": "launcher-v0.20.0"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.15.0/ValheimPlusPlus.exe",
+          "name": "ValheimPlusPlus.exe",
+          "size": 88036795,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.15.0/ValheimPlusPlus-Launcher-0.15.0-Windows-x64.zip",
+          "name": "ValheimPlusPlus-Launcher-0.15.0-Windows-x64.zip",
+          "size": 82255667,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.15.0/launcher.json",
+          "name": "launcher.json",
+          "size": 2053,
+          "state": "uploaded"
+        }
+      ],
+      "body": "## Launcher 0.15.0\n\n### Interfejs i wygoda\n\n- Dodano formatowanie Markdown w opisach zmian: nagłówki, listy, pogrubienia, kursywę, kod i linki.\n- Zastąpiono rozwijany wybór kanału czytelnymi przyciskami wersji stabilnej i beta.\n- Starsze wydania są pokazywane dopiero po wybraniu opcji zmiany wersji.\n- Stan „Przypięta wersja” pojawia się wyłącznie po faktycznym zainstalowaniu starszego wydania.\n- Przebudowano odblokowanie trybu deweloperskiego. Nowe okno zawiera klawiaturę numeryczną, obsługuje fizyczną klawiaturę i automatycznie sprawdza czterocyfrowy PIN.\n- Wersje launchera w trybie deweloperskim są dostępne jako przyciski zamiast rozwijanej listy.\n\n### System aktualizacji\n\n- Zwiększono maksymalny rozmiar pobieranej paczki modów z 512 MB do 1,5 GB.\n- Dodano automatyczne wykrywanie najnowszych wydań launchera i modpaka na GitHubie.\n- Każda wersja jest teraz publikowana jako osobne, niezmienne wydanie.\n- Dodano możliwość wyboru i instalacji wcześniejszych wersji modpaka.\n- Ręczne wybranie starszej wersji przypina ją i wstrzymuje automatyczne wykrywanie aktualizacji modpaka. Kruk Odyna informuje o tym na ekranie głównym i pozwala wrócić do najnowszej wersji.\n- Dodano opcjonalny kanał beta. Wersje testowe są instalowane wyłącznie po ręcznym wybraniu bety lub włączeniu kanału beta.\n- Aktualizacja samego launchera zawsze wymaga potwierdzenia użytkownika.\n- Dodano chroniony kodem PIN tryb deweloperski, umożliwiający testowe cofnięcie wersji launchera.\n- Usprawniono obsługę większych wydań modpaka, w tym Valheim ++ 0.3.0.\n\nAktualizacja zachowuje dotychczasowe ustawienia launchera oraz profile modpaka. Wersje beta pozostają opcjonalne i nie są instalowane automatycznie użytkownikom kanału stabilnego.\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/launcher-v0.15.0",
+      "name": "Valheim ++ Launcher 0.15.0",
+      "prerelease": false,
+      "published_at": "2026-09-24T13:28:40Z",
+      "tag_name": "launcher-v0.15.0"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.14.0/ValheimPlusPlus.exe",
+          "name": "ValheimPlusPlus.exe",
+          "size": 88006563,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.14.0/launcher.json",
+          "name": "launcher.json",
+          "size": 1356,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-v0.14.0/ValheimPlusPlus-Windows-x64.zip",
+          "name": "ValheimPlusPlus-Windows-x64.zip",
+          "size": 82238299,
+          "state": "uploaded"
+        }
+      ],
+      "body": "## Launcher 0.14.0\n\n- Zwiększono maksymalny rozmiar pobieranej paczki modów z 512 MB do 1,5 GB.\n- Dodano automatyczne wykrywanie najnowszych wydań launchera i modpaka na GitHubie.\n- Każda wersja jest teraz publikowana jako osobne, niezmienne wydanie.\n- Dodano możliwość wyboru i instalacji wcześniejszych wersji modpaka.\n- Ręczne wybranie starszej wersji przypina ją i wstrzymuje automatyczne wykrywanie aktualizacji modpaka. Kruk Odyna informuje o tym na ekranie głównym i pozwala wrócić do najnowszej wersji.\n- Dodano opcjonalny kanał beta. Wersje testowe są instalowane wyłącznie po ręcznym wybraniu bety lub włączeniu kanału beta.\n- Aktualizacja samego launchera zawsze wymaga potwierdzenia użytkownika.\n- Dodano chroniony kodem PIN tryb deweloperski, umożliwiający testowe cofnięcie wersji launchera.\n- Usprawniono obsługę większych wydań modpaka, w tym Valheim ++ 0.3.0.\n\nAktualizacja zachowuje dotychczasowe ustawienia launchera oraz profile modpaka. Wersje beta pozostają opcjonalne i nie są instalowane automatycznie użytkownikom kanału stabilnego.\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/launcher-v0.14.0",
+      "name": "Valheim ++ Launcher 0.14.0",
+      "prerelease": false,
+      "published_at": "2026-09-23T19:42:57Z",
+      "tag_name": "launcher-v0.14.0"
+    },
+    {
+      "assets": [
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-stable/ValheimPlusPlus.exe",
+          "name": "ValheimPlusPlus.exe",
+          "size": 87980071,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-stable/ValheimPlusPlus-Windows-x64.zip",
+          "name": "ValheimPlusPlus-Windows-x64.zip",
+          "size": 82412034,
+          "state": "uploaded"
+        },
+        {
+          "browser_download_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/download/launcher-stable/launcher.json",
+          "name": "launcher.json",
+          "size": 1332,
+          "state": "uploaded"
+        }
+      ],
+      "body": "## Launcher 0.13.0\r\n\r\n### Aktualizacje\r\n\r\n- Opcjonalne sprawdzanie aktualizacji paczki i launchera w tle przy uruchomieniu.\r\n- Kruk Odyna informuje o dostępnej aktualizacji; kliknięcie otwiera opis zmian i pozwala rozpocząć aktualizację.\r\n- Aktualizacja zawsze wymaga zatwierdzenia użytkownika. Anulowanie lub chwilowy błąd połączenia nie usuwa informacji o wykrytej aktualizacji.\r\n- Ręczne sprawdzanie aktualizacji modpaka i launchera działa niezależnie.\r\n\r\n### Interfejs\r\n\r\n- Przeprojektowane powiadomienie aktualizacji z nordycką pieczęcią, oznaczeniem wersji i czytelniejszym przyciskiem akcji.\r\n- Okno aktualizacji otrzymało kartę zmian, widok przejścia między wersjami oraz własny scrollbar dla dłuższych opisów.\r\n- Odświeżony układ ustawień, w tym karty, pola tekstowe, listy, zakładki i animowane zielono-złote przełączniki.\r\n- Usprawniono ekran główny oraz przycisk Graj: czytelniejsza hierarchia informacji, plakietki wersji i poprawiona symetria strzałki.\r\n\r\n### Dostępność\r\n\r\n- Animacje interfejsu można wyłączyć w ustawieniach launchera.\r\n",
+      "draft": false,
+      "html_url": "https://github.com/CiuTheDEV/valheim-plus-plus/releases/tag/launcher-stable",
+      "name": "Valheim ++ Launcher 0.13.0",
+      "prerelease": false,
+      "published_at": "2026-09-18T08:29:45Z",
+      "tag_name": "launcher-stable"
+    }
+  ]
+}

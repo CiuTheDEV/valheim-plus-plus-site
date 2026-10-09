@@ -1,0 +1,5 @@
+node_modules/
+.npm-cache/
+dist/
+scripts/capture-launcher/bin/
+scripts/capture-launcher/obj/
