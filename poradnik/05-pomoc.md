@@ -31,7 +31,7 @@ Po przywróceniu uruchom grę i sprawdź, czy problem występuje nadal. [Szczeg�
 
 1. Zamknij Valheim i otwórz **Ustawienia → Gra**.
 2. Kliknij **Sprawdź i napraw paczkę**.
-3. Poczekaj na wynik. Jeśli są braki, przeczytaj listę i kliknij **Uzupełnij brakujące pliki**.
+3. Poczekaj na wynik. Jeśli są braki, sprawdź podsumowanie i kliknij **Uzupełnij brakujące pliki**. Pełną listę możesz otworzyć osobno i przeszukać.
 4. Sprawdź raport po zakończeniu.
 
 ![Naprawa paczki: lista brakujących plików przed ich uzupełnieniem](assets/images/launcher-repair.png)

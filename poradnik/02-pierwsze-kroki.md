@@ -24,10 +24,9 @@ Opisy starszych wydań możesz również przeczytać przez **Ustawienia → Aktu
 
 Otwórz **Ustawienia → Aktualizacje**.
 
-![Ustawienia aktualizacji z osobnym sprawdzaniem i automatyczną instalacją](assets/images/launcher-settings.png)
+![Ustawienia kanału paczki i automatycznej instalacji](assets/images/launcher-settings.png)
 
-- **Sprawdzaj aktualizacje przy uruchomieniu** — powiadomienie o nowej wersji.
-- **Automatycznie instaluj najnowszy modpack** — również instalacja, bez osobnego pytania za każdym razem.
+Launcher sprawdza nowe wydania przy uruchomieniu. Przełącznik **Instaluj aktualizacje paczki automatycznie** pozwala także instalować je przy starcie, bez osobnego pytania za każdym razem.
 
 Zapisz ustawienia po zmianie. Jeżeli wolisz decydować przy każdym wydaniu, pozostaw automatyczną instalację wyłączoną.
 

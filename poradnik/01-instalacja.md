@@ -8,7 +8,7 @@ Kliknij **Pobierz launcher** na [stronie głównej](index.html#jak-zaczac). Zapi
 
 **Co dalej:** przy pierwszej konfiguracji launcher poprosi o wskazanie gry. Jeśli gra jest już skonfigurowana, zobaczysz ekran główny z przyciskiem „Graj”.
 
-![Ekran główny launchera z przyciskiem Graj i ustawieniami w prawym górnym rogu](assets/images/launcher-home.png)
+![Ekran główny przed konfiguracją: Znajdź grę i ustawienia](assets/images/launcher-home.png)
 
 ## 2. Wskaż Valheim
 

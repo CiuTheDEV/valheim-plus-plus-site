@@ -3,7 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Marked } from 'marked';
 import {icon, iconText} from './icons.mjs';
-import { renderLanding, renderHistory, renderMods } from './landing.mjs';
+import { renderLanding, renderHistory, renderMods, renderLauncherPage } from './landing.mjs';
 
 const project = path.resolve(fileURLToPath(new URL('../', import.meta.url)));
 const root = path.resolve(process.argv[2] || project);
@@ -74,15 +74,21 @@ await writeFile(path.join(out, 'poradnik.html'), layout('Poradnik', 'poradnik.ht
 const source = await readFile(path.join(root, 'landing.md'), 'utf8');
 const snapshot=JSON.parse(await readFile(path.join(project,'assets/data/releases.json'),'utf8'));
 const gallery=[
- {id:'home',title:'Gotowe do gry',src:'assets/images/launcher-home.png',alt:'Ekran główny launchera z przyciskiem Graj i stanem paczki.'},
+ {id:'home',title:'Ekran główny przed konfiguracją',src:'assets/images/launcher-home.png',alt:'Ekran główny launchera z przyciskiem Znajdź grę.'},
  {id:'update',title:'Opis zmian w paczce',src:'assets/images/launcher-update.png',alt:'Podgląd zmian w wybranym wydaniu paczki.'},
- {id:'versions',title:'Wybór wcześniejszego wydania',src:'assets/images/launcher-versions.png',alt:'Lista starszych wersji paczki w ustawieniach launchera.'},
+ {id:'versions',title:'Kanał paczki i wcześniejsze wydania',src:'assets/images/launcher-versions.png',alt:'Ustawienia kanału paczki z przyciskiem Starsze wydania.'},
  {id:'backups',title:'Automatyczne kopie',src:'assets/images/launcher-backups.png',alt:'Cofnięcie aktualizacji i historia chronionych danych gracza.'},
  {id:'repair',title:'Naprawa brakujących plików',src:'assets/images/launcher-repair.png',alt:'Lista brakujących plików paczki przed ich uzupełnieniem.'}
 ];
 await writeFile(path.join(out, 'index.html'), renderLanding({ source, chapters: pages, snapshot, gallery }));
 await writeFile(path.join(out, 'changelog.html'), renderHistory({ snapshot }));
 await writeFile(path.join(out, 'mody.html'), renderMods({ snapshot }));
+ids.clear();
+let launcherSource;
+try{launcherSource=await readFile(path.join(root,'launcher.md'),'utf8');}
+catch(error){if(error.code!=='ENOENT')throw error;launcherSource='# Launcher Valheim ++\n\n'+pages.map(p=>`[${p.title}](${p.file})`).join('\n\n');}
+const launcherParts=markdown.parse(launcherSource).split(/(?=<h2\b)/);
+await writeFile(path.join(out,'launcher.html'),renderLauncherPage({parts:launcherParts,snapshot}));
 for (const [i, p] of pages.entries()) {
   ids.clear();
   const rendered = markdown.parse(p.source);

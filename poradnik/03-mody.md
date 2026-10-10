@@ -10,7 +10,7 @@ Wybór wersji znajdziesz w **Ustawienia → Aktualizacje**. Warto go zmienić np
    Na początku widzisz trzy wydania. Pozostałe rozwiniesz przyciskiem **Pokaż pozostałe wydania**.
 4. Kliknij **Zainstaluj tę wersję** i potwierdź operację. Zamknij wcześniej grę.
 
-![Starsze wydania z numerami wersji i przyciskami instalacji](assets/images/launcher-versions.png)
+![Ustawienia aktualizacji: kanał paczki i przycisk Starsze wydania](assets/images/launcher-versions.png)
 
 **Co dalej:** po zainstalowaniu starszego wydania zostaje ono przypięte. Launcher nie będzie proponował kolejnych wersji modpaka, dopóki nie wrócisz do najnowszej.
 

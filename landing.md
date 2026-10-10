@@ -26,11 +26,11 @@ Przeglądarka przedmiotów i receptur, sortowanie ekwipunku oraz korzystanie z z
 
 ## Launcher
 
-Pobierz paczkę, sprawdź zmiany i uruchom grę. Aktualizacje masz pod ręką — bez ręcznego podmieniania plików.
+Od pierwszej instalacji do kolejnej wyprawy — launcher zajmuje się plikami paczki, a Ty wybierasz, kiedy grać i co aktualizować.
 
-- Instalacja paczki i uruchamianie Valheim.
-- Podgląd zmian przed aktualizacją.
-- Wybór wersji i przywracanie kopii paczki.
+- Pobieranie i aktualizacje bez ręcznego kopiowania modów.
+- Opisy zmian oraz wybór stabilnej paczki, bety lub starszego wydania.
+- Naprawa brakujących plików i powrót do poprzedniej paczki.
 
 ## Jak zacząć?
 
