@@ -13,10 +13,19 @@ export const downloadUrl = catalog => catalog?.launcher?.[0]?.assets.find(a=>a.n
 export function catalogSnapshot(catalog) {
  return {schema:1,fetchedAt:new Date().toISOString(),releases:Object.values(catalog).flat().map(e=>({tag_name:e.tag,draft:false,prerelease:e.product==='beta',published_at:e.date,html_url:e.url,name:e.title,body:e.notes,assets:e.assets.map(a=>({name:a.name,size:a.size,state:'uploaded',browser_download_url:a.url}))}))};
 }
-export function releaseCards(entries, limit=entries.length) {
- return entries.slice(0,limit).map(e=>`<article class="release-card"><header><h3>${escapeHtml(e.product==='launcher'?'Launcher':e.product==='beta'?'Valheim ++ beta':'Valheim ++')} ${escapeHtml(e.version)}</h3><time datetime="${escapeHtml(e.date)}">${escapeHtml(e.date.slice(0,10))}</time></header>${e.product==='beta'?'<p class="beta-warning">Wydanie testowe — instalacja tylko po świadomym wyborze w launcherze.</p>':''}<div class="release-notes">${safeNotes(e.notes).replace(/<(\/?)(h)([1-6])>/g,(_,slash,h,n)=>`<${slash}h${Math.min(6,Number(n)+3)}>`)||'<p>Brak opisu zmian.</p>'}</div><a class="text-link" href="${escapeHtml(e.url)}">Wydanie na GitHubie ${arrowIcon}</a></article>`).join('') || '<p>Brak kompletnych publicznych wydań w tym kanale. <a href="'+RELEASES_URL+'">Sprawdź GitHub '+arrowIcon+'</a></p>';
+// Poziom nagłówka karty zależy od miejsca na stronie; nagłówki opisu wydania schodzą o jeden poziom niżej, bez przeskoków.
+function nestHeadings(html, cardLevel) {
+ const levels=[...html.matchAll(/<h([1-6])>/g)].map(m=>Number(m[1]));
+ if(!levels.length)return html;
+ const shift=cardLevel+1-Math.min(...levels);
+ return html.replace(/<(\/?)h([1-6])>/g,(_,slash,n)=>`<${slash}h${Math.min(6,Number(n)+shift)}>`);
 }
-export function releaseArchive(entries){return entries.map(e=>`<details class="archive-entry"><summary><span>${escapeHtml(e.version)}</span><time>${escapeHtml(e.date.slice(0,10))}</time><span class="archive-label">Opis zmian</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>${releaseCards([e])}</details>`).join('')||'<p>Brak starszych wydań.</p>';}
+const NOTES_CLAMP=900;
+const chevronIcon='<svg class="lucide lucide-chevron-down" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
+export function releaseCards(entries, limit=entries.length, level=3) {
+ return entries.slice(0,limit).map(e=>`<article class="release-card"><header><h${level}>${escapeHtml(e.product==='launcher'?'Launcher':e.product==='beta'?'Valheim ++ beta':'Valheim ++')} ${escapeHtml(e.version)}</h${level}><time datetime="${escapeHtml(e.date)}">${escapeHtml(e.date.slice(0,10))}</time></header>${e.product==='beta'?'<p class="beta-warning">Wydanie testowe — instalacja tylko po świadomym wyborze w launcherze.</p>':''}<div class="release-body"><div class="release-notes${e.notes.length>NOTES_CLAMP?' clamped':''}">${nestHeadings(safeNotes(e.notes),level)||'<p>Brak opisu zmian.</p>'}</div>${e.notes.length>NOTES_CLAMP?'<button class="notes-toggle" type="button" aria-expanded="false"><span>Rozwiń cały opis</span>'+chevronIcon+'</button>':''}</div><a class="text-link" href="${escapeHtml(e.url)}">Wydanie na GitHubie ${arrowIcon}</a></article>`).join('') || '<p>Brak kompletnych publicznych wydań w tym kanale. <a href="'+RELEASES_URL+'">Sprawdź GitHub '+arrowIcon+'</a></p>';
+}
+export function releaseArchive(entries,level=3){return entries.map(e=>`<details class="archive-entry"><summary><span>${escapeHtml(e.version)}</span><time>${escapeHtml(e.date.slice(0,10))}</time><span class="archive-label">Opis zmian</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>${releaseCards([e],1,level)}</details>`).join('')||'<p>Brak starszych wydań.</p>';}
 export const escapeHtml = value => String(value).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]);
 const versionPart = '(0|[1-9][0-9]{0,5})';
 const tagPattern = new RegExp(`^(launcher|modpack|modpack-beta)-v(${versionPart}\\.${versionPart}\\.${versionPart})$`);
@@ -80,7 +89,7 @@ export function safeNotes(source) {
  if(typeof source!=='string')return '';
  let html='',list='',paragraph=[],code=null;
  const flush=()=>{if(paragraph.length){html+=`<p>${inline(paragraph.join(' '))}</p>`;paragraph=[];}if(list){html+=`</${list}>`;list='';}};
- for(const line of source.slice(0,20000).replace(/\r/g,'').split('\n')){
+ for(const line of source.slice(0,20000).replace(/<!--[\s\S]*?-->/g,'').replace(/\r/g,'').split('\n')){
   if(line.startsWith('```')){flush();if(code===null)code=[];else{html+=`<pre><code>${escapeHtml(code.join('\n'))}</code></pre>`;code=null;}continue;}
   if(code!==null){code.push(line);continue;}
   const heading=line.match(/^(#{1,6})\s+(.+)$/),item=line.match(/^\s*(?:([-*])|\d+\.)\s+(.+)$/);

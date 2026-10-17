@@ -10,7 +10,7 @@ test('szczegóły launchera są dostępne ze strony głównej i prowadzą do ist
  assert.ok(existsSync('dist/launcher.html'),'Brak osobnej strony launchera');
  const page=readFileSync('dist/launcher.html','utf8');
  assert.match(page,/class="site-header"/);
- assert.doesNotMatch(page,/class="sidebar"|class="vh-guide|class="guide-step"/);
+ assert.doesNotMatch(page,/class="sidebar"|class="vh-guide|class="guide-step/);
  for(const target of ['01-instalacja.html','02-pierwsze-kroki.html','03-mody.html','04-wspolna-gra.html','05-pomoc.html'])assert.ok(page.includes(`href="${target}`),target);
  for(const match of page.matchAll(/(?:src|href)="([^"#]+)(?:#[^"]*)?"/g)){
   if(/^[a-z]+:/i.test(match[1]))continue;

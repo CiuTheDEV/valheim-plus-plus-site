@@ -15,14 +15,20 @@ npm run preview
 
 Podgląd: http://127.0.0.1:4173. Wynik: `dist/`. Nie edytuj wygenerowanego HTML.
 
+## Wygląd
+
+Zasady wyglądu (tokeny, układ, zagospodarowanie przestrzeni, procedura zmian UI) są w `DESIGN.md`. Przeczytaj go przed każdą zmianą stylu lub układu.
+
 ## Gdzie zmieniać treść
 
 - `landing.md` — opis paczki, launcher, trzy kroki i tematy pomocy. Zachowaj sekcje: O modpaku, Launcher, Jak zacząć?, Pomoc.
 - `poradnik/*.md` — osobny poradnik. Numer nazwy określa kolejność; pierwszy nagłówek jest tytułem. Linki .md zamieniane są na .html.
 - `assets/landing.css` — landing; `style.css` i `ux.css` — poradnik.
 - `scripts/landing.mjs` — układ i galeria; `scripts/build.mjs` — generator.
-- `assets/images/launcher-*.png` — rzeczywiste widoki launchera 0.20.1, bez kursora. Galeria pokazuje ekran główny, opis zmian, wybór wersji i kopie. Autoplay jest domyślnie włączony; najechanie na zdjęcie, fokus klawiatury lub otwarcie powiększenia chwilowo go wstrzymują. Strzałki i kropki nie wyłączają autoplay na stałe. Przycisku pauzy nie ma; strzałki mają osobne miejsce poza obrazem.
+- `assets/images/launcher-*.png` — rzeczywiste widoki launchera 1.0.1, bez kursora. Galeria pokazuje ekran główny, profile, mody, opis zmian, historię zmian, starsze wydania, kopie i naprawę. Autoplay jest domyślnie włączony; najechanie na zdjęcie, fokus klawiatury lub otwarcie powiększenia chwilowo go wstrzymują. Strzałki i kropki nie wyłączają autoplay na stałe. Przycisku pauzy nie ma; strzałki mają osobne miejsce poza obrazem.
 - `assets/refinement.css` — wspólne wykończenie sekcji, galerii i poradnika; lokalny Cinzel służy tylko ozdobnej numeracji. Płynne przewijanie i animacje są domyślnie włączone zgodnie z założeniem projektu.
+- Ruch na stronie: `assets/page-flow.js` (przejścia między stronami, we wszystkich przeglądarkach), `assets/reveal.js` (wejścia elementów przy przewijaniu), `assets/download-moment.js` (pieczęć, kruk i komunikat po kliknięciu „Pobierz launcher”; klatki kruka w `assets/images/raven-flight.webp`, arkusz 4×2). Przy ograniczonym ruchu zostają łagodniejsze wersje, nie brak ruchu.
+- Lista modów (`assets/data/mods.mjs`, `mod-details.mjs`) pochodzi z `../Valheim ++/BepInEx/plugins`; po zmianie paczki zaktualizuj ją i licznik w `tests/mods.test.mjs`.
 - Hero i emblemat pochodzą z launchera. Hero jest ilustracją, nie screenem rozgrywki.
 - Widoki kopii i lokalizacji gry pochodzą z renderów istniejącego interfejsu przed konfiguracją; pozostałe zrzuty wykonano w działającym launcherze. Nie retuszowano kontrolek ani nie symulowano postępu instalacji.
 - `docs/archive/` — zachowane wcześniejsze materiały, niepublikowane w dist.
@@ -47,7 +53,7 @@ npm test
 npm run build
 ```
 
-Generator używa bieżącego projektu `../LAUNCHER/ZRODLA/Desktop`. Tworzy 8 screenów PNG bez kursora: główne widoki 1920×1280 oraz okno błędu w jego własnych proporcjach, wszystkie w skali 2×. Korzysta z odizolowanego profilu i lokalnej migawki wydań. Nie uruchamia gry, nie pobiera paczki i nie zmienia instalacji użytkownika. Numery wydań są przykładowym stanem z migawki. SDK i źródła launchera są potrzebne tylko do ponownego wykonania screenów, nie do budowania ani działania strony na GitHub Pages.
+Generator używa bieżącego projektu `../LAUNCHER/ZRODLA/Desktop`. Tworzy 12 screenów PNG bez kursora: główne widoki 1920×1280 (w tym historia zmian i mody), okno wyboru profilu, okno „Wyślij raport” oraz okno błędu w ich własnych proporcjach, wszystkie w skali 2×. Zrzut „Wieści z północy” i opis modów to dane przykładowe z migawki. Korzysta z odizolowanego profilu i lokalnej migawki wydań. Nie uruchamia gry, nie pobiera paczki i nie zmienia instalacji użytkownika. Numery wydań są przykładowym stanem z migawki. SDK i źródła launchera są potrzebne tylko do ponownego wykonania screenów, nie do budowania ani działania strony na GitHub Pages.
 
 ## Publikacja GitHub Pages
 

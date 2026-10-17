@@ -6,7 +6,7 @@ Od pobrania launchera do pierwszej gry — krok po kroku.
 
 Kliknij **Pobierz launcher** na [stronie głównej](index.html#jak-zaczac). Zapisz plik **ValheimPlusPlus.exe** w miejscu, z którego chcesz go uruchamiać, i otwórz go.
 
-**Co dalej:** przy pierwszej konfiguracji launcher poprosi o wskazanie gry. Jeśli gra jest już skonfigurowana, zobaczysz ekran główny z przyciskiem „Graj”.
+**Co dalej:** przy pierwszej konfiguracji launcher poprosi o wskazanie gry. Jeśli gra jest już skonfigurowana, zobaczysz ekran główny z przyciskiem „Graj”. Masz starszą wersję launchera? Po aktualizacji do 1.0.1 Twoje dotychczasowe dane przeniosą się same do pierwszego profilu, a oryginały zostaną zachowane.
 
 ![Ekran główny przed konfiguracją: Znajdź grę i ustawienia](assets/images/launcher-home.png)
 
@@ -24,14 +24,14 @@ Kliknij **Zapisz ustawienia**.
 
 ## 3. Zainstaluj paczkę
 
-Na ekranie głównym sprawdź paczkę przez **Wieści z północy** lub kliknij powiadomienie kruka. Przeczytaj opis i potwierdź instalację przyciskiem w oknie paczki.
+Na świeżym profilu przycisk **Zainstaluj paczkę** jest od razu aktywny — kliknij go. Opis zmian możesz przeczytać później w **Historii zmian** albo w ustawieniach aktualizacji.
 
-Przy pierwszej instalacji launcher pokaże przygotowanie Twojej pierwszej paczki. Opis zmian możesz też przeczytać później w ustawieniach aktualizacji.
+**Co dalej:** okno pobierania pokaże procent, etap instalacji oraz trzy kafelki: ile już pobrano, z jaką prędkością i ile zostało. W czasie instalacji nie uruchamiaj gry.
 
-**Co dalej:** poczekaj na zakończenie pobierania i przygotowania plików. W czasie instalacji nie uruchamiaj gry.
+Chcesz mieć osobną paczkę do testów albo drugi zestaw modów? Zobacz [profile i mody](07-profile-i-mody.md).
 
 ## 4. Uruchom grę
 
-Gdy paczka jest gotowa, kliknij **Graj**. Do kolejnych uruchomień również używaj launchera.
+Gdy paczka jest gotowa, kliknij **Graj**. Launcher schowa się do zasobnika, wyciszy muzykę i wróci, gdy zamkniesz Valheim. Do kolejnych uruchomień również używaj launchera.
 
 Jeśli coś zatrzymało instalację, przejdź do [rozwiązywania problemów](05-pomoc.md).

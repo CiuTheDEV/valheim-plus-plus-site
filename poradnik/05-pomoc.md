@@ -38,7 +38,11 @@ Po przywróceniu uruchom grę i sprawdź, czy problem występuje nadal. [Szczeg�
 
 Launcher pobiera archiwum zainstalowanej wersji, więc potrzebuje internetu. Uzupełnia tylko braki: nie nadpisuje istniejących konfiguracji, nie usuwa dodatkowych plików i pomija chronione dane gracza. Nie sprawdza zawartości istniejących plików — zmieniony lub uszkodzony plik nie zostanie uznany za brak.
 
-Jeśli paczka jest kompletna, ale problem trwa, sprawdź własne mody i konfiguracje albo wróć do poprzedniego [wydania](03-mody.md). Nie kasuj danych w ciemno.
+Jeśli paczka jest kompletna, ale problem trwa, sprawdź własne mody (możesz je wyłączyć w zakładce **Mody**) i konfiguracje albo wróć do poprzedniego [wydania](03-mody.md). Nie kasuj danych w ciemno.
+
+## Gra się zawiesiła
+
+Jeśli Valheim nie reaguje, użyj przycisku **Wymuś zamknięcie gry** w launcherze. Launcher pokaże ostrzeżenie, żebyś nie zrobił tego przez przypadek. Niezapisany postęp w grze może przepaść.
 
 ## Nie możesz dołączyć do serwera
 
@@ -46,7 +50,7 @@ Porównaj numer modpaka z wersją wymaganą przez serwer. Sprawdź również zgo
 
 ## Co dołączyć do zgłoszenia
 
-Jeśli launcher wyświetli okno błędu:
+Najprościej użyć przycisku **Wyślij raport** w ustawieniach launchera — [opis poniżej](#wyslij-raport-z-ustawien). Jeśli launcher wyświetli okno błędu:
 
 1. Kliknij **Kopiuj raport**.
 2. Wklej raport do wiadomości ze zgłoszeniem.
@@ -55,6 +59,10 @@ Jeśli launcher wyświetli okno błędu:
 ![Okno błędu launchera z przyciskiem Kopiuj raport i rozwijanymi szczegółami technicznymi](assets/images/launcher-error.png)
 
 Raport zawiera wersje i informacje techniczne potrzebne do sprawdzenia błędu. Nie zawiera surowej treści wyjątku ani lokalnych ścieżek. Przycisk tylko kopiuje tekst — niczego sam nie wysyła. Jeśli kopiowanie się nie uda, rozwiń **Szczegóły techniczne** i skopiuj tekst ręcznie.
+
+### Wyślij raport z ustawień
+
+W ustawieniach launchera jest też przycisk **Wyślij raport**. Opisz problem (do 200 znaków), opcjonalnie podaj nick i zaznacz dołączenie szczegółów profilu i modów. Log gry dołącza się automatycznie. Przed wysłaniem możesz podejrzeć załączniki. Dane prywatne, np. ścieżki z nazwą użytkownika, są maskowane, a kod dostępu nie jest potrzebny.
 
 Jeżeli nie pojawiło się okno z raportem, dołącz komunikat lub screen. W zgłoszeniu przydadzą się również:
 

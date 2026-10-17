@@ -52,9 +52,14 @@ Jotunn:'Wspólna biblioteka dla twórców modów, pomagająca dodawać zawartoś
 JsonDotNET:'Biblioteka Newtonsoft Json.NET pozwalająca innym modom obsługiwać pliki JSON. Jej obecność wynika z zależności technicznych paczki.',
 YamlDotNet:'Biblioteka do obsługi plików YAML używana przez inne dodatki. Nie ma własnego interfejsu rozgrywki i wspiera działanie modów korzystających z tego formatu.',
 SmarterContainers:'Pomaga porządkować zasoby w pojemnikach i współpracować z sąsiednimi skrzyniami. Ułatwia odkładanie przedmiotów bez ręcznego szukania każdego stosu.',
-AdventureBackpacks:'Dodaje katalog plecaków dostosowanych do wypraw. Plecaki rosną w użyteczność wraz z postępem gry, zamiast oferować od początku jeden niezmienny wariant.'
+AdventureBackpacks:'Dodaje katalog plecaków dostosowanych do wypraw. Plecaki rosną w użyteczność wraz z postępem gry, zamiast oferować od początku jeden niezmienny wariant.',
+New_LvlUp_Effect:'Zmienia komunikat o awansie umiejętności na stonowany, nordycki: cyfry zmieniają się płynnie, a całość otacza złote światło i subtelny ornament. Działa po stronie gracza i zostawia bez zmian postęp umiejętności, dźwięki oraz efekty z podstawowej gry.',
+ChestPreview:'Wystarczy spojrzeć na skrzynię, aby zobaczyć listę jej zawartości: ikony przedmiotów, nazwy i łączne liczby sztuk, bez otwierania. Przydaje się przy przeszukiwaniu wielu skrzyń w bazie.',
+NetworkPerformanceSystem:'Ogólne usprawnienie sieci w Valheim. Mod osobno mierzy jakość połączenia każdego gracza i dostosowuje, kto zarządza obiektami w okolicy, żeby pojedynczy gracz z wysokim pingiem nie psuł zabawy pozostałym. Ma sens głównie na serwerach.',
+RavenRadio:'Radio internetowe i własna muzyka w bazie oraz podczas rejsów. Odbiornik zbudujesz w bazie albo zamontujesz na Karwie, długiej łodzi lub Drakkarze. Obsługuje stacje przez Radio Browser, ulubione, lokalne pliki MP3, OGG i WAV oraz wspólne sterowanie z pierwszeństwem kapitana. Wszyscy gracze i serwer muszą mieć tę samą wersję.'
 };
 export const sourceUrls={
+New_LvlUp_Effect:'https://github.com/Crevitka/Valheim-New-LvlUp-Effect',
 PlanBuild:'https://github.com/sirskunkalot/PlanBuild',
 VNEI:'https://github.com/MSchmoecker/VNEI',
 StoreAndCraft:'https://github.com/morda0511/StoreAndCraft',

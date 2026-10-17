@@ -13,7 +13,9 @@ test('landing pokazuje najnowszy modpack, starsze wydania osobno i kontrolowaną
  assert.match(latest[1],/0.3.10/);assert.doesNotMatch(latest[1],/0.3.9/);
  assert.match(html,/id="older-release-list"/);
  assert.doesNotMatch(html,/id="secondary-release-list"/);
- assert.match(renderHistory({snapshot:{schema:1,fetchedAt:'2026-10-07T00:00:00Z',releases:[raw('0.3.10')]}}),/id="secondary-release-list"/);
+ const history=renderHistory({snapshot:{schema:1,fetchedAt:'2026-10-07T00:00:00Z',releases:[raw('0.3.10')]}});
+ for(const id of ['modpack','launcher','beta'])assert.match(history,new RegExp('role="tab"[^>]*aria-controls="panel-'+id+'"'));
+ assert.match(history,/id="panel-modpack"[^>]*>[\s\S]*0\.3\.10/);assert.match(history,/id="panel-launcher"[^>]*hidden/);
  assert.match(html,/aria-label="Poprzedni screen"/);assert.match(html,/aria-label="Następny screen"/);assert.doesNotMatch(html,/data-gallery-pause/);
  assert.match(html,/Bullet/);
  const help=html.split('id="pomoc"')[1].split('</section>')[0];
@@ -43,7 +45,7 @@ test('nowy rozdział trafia do menu, linki Markdown działają w podfolderze', (
     assert.match(page, /class="vh-guide"/);
     assert.match(page, /assets\/guide.css/);
     assert.match(page, /class="guide-footer"/);
-    assert.match(readFileSync(path.join(root, 'dist/02-mody.html'), 'utf8'), /class="guide-step"/);
+    assert.match(readFileSync(path.join(root, 'dist/02-mody.html'), 'utf8'), /class="guide-step reveal"/);
     assert.doesNotMatch(page, /href="\//);
     assert.match(readFileSync(path.join(root, 'dist/02-mody.html'), 'utf8'), /id="lista"/);
     const landing = readFileSync(path.join(root, 'dist/index.html'), 'utf8');
@@ -55,7 +57,7 @@ test('nowy rozdział trafia do menu, linki Markdown działają w podfolderze', (
     assert.doesNotMatch(landing, /music-widget/);
     const guide = readFileSync(path.join(root, 'dist/poradnik.html'), 'utf8');
     assert.match(guide, /02-mody.html/);
-    const cards = [...guide.matchAll(/<a class="card"[\s\S]*?<\/a>/g)].map(match => match[0]);
+    const cards = [...guide.matchAll(/<a class="card reveal"[\s\S]*?<\/a>/g)].map(match => match[0]);
     assert.equal(cards.length, 2);
     for (const card of cards) {
       assert.doesNotMatch(card, /<img/);

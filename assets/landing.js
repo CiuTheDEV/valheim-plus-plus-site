@@ -1,3 +1,6 @@
+import './page-flow.js';
+import './reveal.js';
+import './download-moment.js';
 import {createGallery} from './gallery-core.mjs';
 import {initViewer} from './viewer.js';
 import {scrollEnabled,scrollPosition,activeSection} from './scroll-core.mjs';
@@ -7,7 +10,8 @@ const gallery=document.querySelector('[data-gallery]');
 if(gallery){
  const slides=[...gallery.querySelectorAll('[data-slide]')],dots=[...gallery.querySelectorAll('[data-gallery-dot]')];
  const model=createGallery(slides.length,motion.matches);
- function render(){slides.forEach((slide,i)=>{slide.hidden=i!==model.index;});dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===model.index)));}
+ let last=model.index;
+ function render(){const n=slides.length,delta=model.index-last,dir=delta===0?0:(delta===-(n-1)?1:delta===n-1?-1:Math.sign(delta));slides.forEach((slide,i)=>{const show=i===model.index;if(show&&dir){slide.style.setProperty('--dir',String(dir));slide.style.animation='none';void slide.offsetWidth;slide.style.animation='';}slide.hidden=!show;});last=model.index;dots.forEach((dot,i)=>dot.setAttribute('aria-pressed',String(i===model.index)));}
  const move=delta=>{model.move(delta);render();};
  gallery.querySelector('[data-gallery-prev]').addEventListener('click',()=>move(-1));
  gallery.querySelector('[data-gallery-next]').addEventListener('click',()=>move(1));
@@ -54,4 +58,3 @@ if(navLinks.length){
  window.addEventListener('scroll',scheduleNav,{passive:true});window.addEventListener('resize',scheduleNav);
  new ResizeObserver(scheduleNav).observe(document.body);updateNav();
 }
-if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target);}},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>{el.classList.add('will-reveal');observer.observe(el);});}

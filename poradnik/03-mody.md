@@ -10,20 +10,22 @@ Wybór wersji znajdziesz w **Ustawienia → Aktualizacje**. Warto go zmienić np
    Na początku widzisz trzy wydania. Pozostałe rozwiniesz przyciskiem **Pokaż pozostałe wydania**.
 4. Kliknij **Zainstaluj tę wersję** i potwierdź operację. Zamknij wcześniej grę.
 
-![Ustawienia aktualizacji: kanał paczki i przycisk Starsze wydania](assets/images/launcher-versions.png)
+![Ustawienia aktualizacji: starsze wydania paczki](assets/images/launcher-versions.png)
 
-**Co dalej:** po zainstalowaniu starszego wydania zostaje ono przypięte. Launcher nie będzie proponował kolejnych wersji modpaka, dopóki nie wrócisz do najnowszej.
+**Co dalej:** po zainstalowaniu starszego wydania zostaje ono przypięte. Launcher nie będzie proponował kolejnych wersji modpaka, dopóki nie wrócisz do najnowszej. Na ekranie głównym zobaczysz wtedy informację o przypiętej wersji.
 
 ## Powrót na najnowszą wersję
 
-Otwórz **Ustawienia → Aktualizacje**, wybierz **Stabilna · zalecana** i zapisz ustawienia. Sprawdź aktualizację z ekranu głównego. Możesz też skorzystać z akcji kruka, który informuje o wstrzymanym sprawdzaniu.
+Kliknij kruka na ekranie głównym i potwierdź **wznowienie aktualizacji**. Launcher znów będzie śledził najnowszą stabilną wersję modpaka i launchera. Następnie sprawdź aktualizację przez **Wieści z północy**.
 
-![Wybór kanału stabilnego w ustawieniach aktualizacji](assets/images/launcher-settings.png)
+![Ustawienia aktualizacji w launcherze](assets/images/launcher-settings.png)
 
 ## Beta
 
-W tej samej zakładce wybierz **Beta · testowa** i zapisz ustawienia. Dostępne wydania testowe sprawdzisz przez launcher. Jeśli nie ma opublikowanej bety, lista może być pusta.
+Beta jest teraz **osobnym profilem**, a nie przełącznikiem w ustawieniach: przy zakładaniu profilu zaznacz **Profil beta**. Taki profil ma własną instalację i dostaje wersje testowe, a na avatarze widać złotą odznakę. Profil stabilny nadal dostaje wyłącznie wydania stabilne. Jak założyć profil, opisuje rozdział [Profile i mody](07-profile-i-mody.md).
 
-Przed testami zachowaj kopie świata i postaci. Beta korzysta z tych samych zapisów gry; sama zmiana kanału ich nie rozdziela.
+Dostępne wydania testowe sprawdzisz przez launcher. Jeśli nie ma opublikowanej bety, lista może być pusta.
 
-Aby zakończyć testy, wybierz ponownie **Stabilna · zalecana**, zapisz ustawienia i sprawdź paczkę. Dostępne zmiany przeczytasz również w [historii aktualizacji](changelog.html).
+Przed testami zachowaj kopie świata i postaci. **Światy i postacie są wspólne dla wszystkich profili**, więc beta korzysta z tych samych zapisów.
+
+Aby zakończyć testy, wybierz profil stabilny. Dostępne zmiany przeczytasz również w [historii zmian](changelog.html).

@@ -1,3 +1,5 @@
+import './page-flow.js';
+import './reveal.js';
 export function initViewer(selector,onOpen=()=>{},onClose=()=>{}){
  const triggers=[...document.querySelectorAll(selector)];if(!triggers.length)return;
  const dialog=document.createElement('dialog');dialog.className='screen-dialog';

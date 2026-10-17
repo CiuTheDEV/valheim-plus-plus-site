@@ -1,7 +1,7 @@
 /* Shared Nordic identity, with a quieter reading layout for instructions. */
 html:has(.vh-guide){scroll-behavior:smooth}
 .vh-guide{background:#0b1812;color:#edf0e8}
-.vh-guide .sidebar{width:270px;padding:32px 22px;background:linear-gradient(#0b1812f5,#0b1812fa),url('images/nordic-texture-v1.png') center/640px;overflow-y:auto}
+.vh-guide .sidebar{width:270px;padding:32px 22px;background:linear-gradient(#0b1812f5,#0b1812fa),url('images/nordic-texture-v1.webp') center/640px;overflow-y:auto}
 .vh-guide .nav-label{margin-top:38px;color:#d4b36b}
 .vh-guide .nav-link{border:1px solid transparent;border-radius:5px;transition:background .2s,border-color .2s;color:#c2cfc5}
 .vh-guide .nav-link.active{border-color:#d4b36b66;box-shadow:none;background:#d4b36b0d}
@@ -12,8 +12,8 @@ html:has(.vh-guide){scroll-behavior:smooth}
 .vh-guide main{max-width:1240px;padding:42px 5% 56px}
 .vh-guide .breadcrumb{margin-bottom:26px;color:#afbeb2}
 .vh-guide .article{max-width:none;font-size:17px;line-height:1.8}
-.vh-guide .chapter-intro,.vh-guide .guide-intro,.vh-guide .guide-step{position:relative;border:1px solid #d4b36b35;border-radius:6px;padding:36px 40px;background:linear-gradient(#12231ae8,#12231ae8),url('images/nordic-texture-v1.png') center/640px}
-.vh-guide .chapter-intro::before,.vh-guide .guide-intro::before,.vh-guide .guide-step::before,.vh-guide .guide-step::after{content:'';position:absolute;width:100px;height:67px;background:url('images/nordic-corner-v1.png') center/contain no-repeat;pointer-events:none;opacity:.65;left:-14px;top:-11px}
+.vh-guide .chapter-intro,.vh-guide .guide-intro,.vh-guide .guide-step{position:relative;border:1px solid #d4b36b35;border-radius:6px;padding:36px 40px;background:linear-gradient(#12231ae8,#12231ae8),url('images/nordic-texture-v1.webp') center/640px}
+.vh-guide .chapter-intro::before,.vh-guide .guide-intro::before,.vh-guide .guide-step::before,.vh-guide .guide-step::after{content:'';position:absolute;width:100px;height:67px;background:url('images/nordic-corner-v1.webp') center/contain no-repeat;pointer-events:none;opacity:.65;left:-14px;top:-11px}
 .vh-guide .guide-step::after{left:auto;top:auto;right:-14px;bottom:-11px;transform:rotate(180deg)}
 .vh-guide .chapter-intro h1{font-family:Georgia,serif;font-size:clamp(34px,3.5vw,48px);letter-spacing:-.7px;margin:16px 0 22px;font-weight:400}
 .vh-guide .chapter-intro p{max-width:760px;margin-bottom:0;color:#c2cfc5;font-size:17px}

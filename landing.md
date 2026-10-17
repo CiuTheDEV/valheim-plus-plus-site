@@ -29,8 +29,10 @@ Przeglądarka przedmiotów i receptur, sortowanie ekwipunku oraz korzystanie z z
 Od pierwszej instalacji do kolejnej wyprawy — launcher zajmuje się plikami paczki, a Ty wybierasz, kiedy grać i co aktualizować.
 
 - Pobieranie i aktualizacje bez ręcznego kopiowania modów.
-- Opisy zmian oraz wybór stabilnej paczki, bety lub starszego wydania.
-- Naprawa brakujących plików i powrót do poprzedniej paczki.
+- Osobne profile z własnym avatarem, paczką i modami; beta to po prostu osobny profil.
+- Mody włączasz i wyłączasz jednym kliknięciem, a własne dodajesz z pliku.
+- Historia zmian, naprawa brakujących plików i powrót do poprzedniej paczki.
+- Przycisk **Wyślij raport**: opisz problem w kilku słowach i wyślij go z poziomu launchera.
 
 ## Jak zacząć?
 
@@ -54,12 +56,12 @@ Wskaż plik `valheim.exe` w ustawieniach launchera, zapisz wybór i kliknij **Za
 
 ### Błędy i naprawa paczki
 
-Brakuje plików paczki? Użyj naprawy w launcherze — uzupełnia brakujące pliki bez usuwania dodatkowych danych. Przy innym błędzie skopiuj raport z komunikatu. [Rozwiązywanie problemów →](05-pomoc.html)
+Brakuje plików paczki? Użyj naprawy w launcherze — uzupełnia brakujące pliki bez usuwania dodatkowych danych. Przy innym błędzie użyj **Wyślij raport** w ustawieniach launchera albo skopiuj raport z komunikatu. [Rozwiązywanie problemów →](05-pomoc.html)
 
 ### Wybór wersji
 
-W ustawieniach, w zakładce **Aktualizacje**, wybierz starsze wydanie lub betę. Opis zmian sprawdzisz przed instalacją. [Zmiana wersji krok po kroku →](03-mody.html)
+Starsze wydanie wybierzesz w **Ustawienia → Aktualizacje → Starsze wydania**, a betę założysz jako osobny profil. Opis zmian sprawdzisz przed instalacją. [Zmiana wersji krok po kroku →](03-mody.html)
 
 ### Kopie i dane gracza
 
-Przy aktualizacji launcher tworzy kopię poprzedniej paczki. Chronione dane gracza zachowuje osobno w historii ostatnich 10 aktualizacji. [Jak działają kopie i ochrona danych →](04-wspolna-gra.html)
+Przy aktualizacji launcher tworzy kopię poprzedniej paczki. Chronione dane gracza zachowuje osobno w historii ostatnich 10 aktualizacji. Światy i postacie są wspólne dla wszystkich profili. [Jak działają kopie i ochrona danych →](04-wspolna-gra.html)

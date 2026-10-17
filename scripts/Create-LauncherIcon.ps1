@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
 $workspaceRoot = Split-Path $PSScriptRoot -Parent
-$sourceLogo = [System.Drawing.Image]::FromFile((Join-Path $workspaceRoot 'assets/images/valheim-emblem.png'))
+$sourceLogo = [System.Drawing.Image]::FromFile((Join-Path $workspaceRoot 'docs/archive/obrazy-oryginaly-20261016/valheim-emblem.png'))
 $iconImages = @()
 try {
     foreach ($iconSize in @(16,24,32,48,64,128,256)) {

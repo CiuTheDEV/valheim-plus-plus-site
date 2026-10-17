@@ -1,4 +1,4 @@
-// Inventory checked against stable BepInEx/plugins manifests, 2026-10-09.
+// Inventory checked against stable BepInEx/plugins manifests, 2026-10-17.
 // Descriptions are concise Polish summaries of the bundled manifest descriptions.
 export const categories = ['Walka i wyprawy','Budowanie','Uprawy i gotowanie','Wygoda','Techniczne'];
 const rows = [
@@ -54,6 +54,10 @@ const rows = [
 ['JsonDotNET',4,'Wspólna biblioteka odczytu i zapisu danych JSON.'],
 ['YamlDotNet',4,'Wspólna biblioteka obsługi danych YAML.'],
 ['SmarterContainers',3,'Organizowanie przedmiotów w pojemnikach współpracujących z sąsiednimi skrzyniami.'],
-['AdventureBackpacks',0,'Plecaki rozwijane wraz z postępem gry.']
+['AdventureBackpacks',0,'Plecaki rozwijane wraz z postępem gry.'],
+['New_LvlUp_Effect',3,'Stonowane powiadomienia o awansie umiejętności ze złotym światłem i zmieniającymi się cyframi.'],
+['ChestPreview',3,'Podgląd zawartości skrzyni po spojrzeniu na nią, bez otwierania.'],
+['NetworkPerformanceSystem',4,'Usprawnienie sieci w grze wieloosobowej, zwłaszcza przy graczach z wysokim pingiem.'],
+['RavenRadio',3,'Radio internetowe i własna muzyka w bazie oraz na statkach, ze wspólnym sterowaniem.']
 ];
 export const mods = rows.map(([name,category,description])=>({name,category:categories[category],description}));

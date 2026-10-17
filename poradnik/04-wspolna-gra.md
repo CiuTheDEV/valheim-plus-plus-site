@@ -1,6 +1,6 @@
 # Kopie i dane gracza
 
-Kopia launchera obejmuje paczkę: mody i konfiguracje. Światy i postacie zabezpiecz osobno — przywrócenie paczki nie cofa zapisów gry.
+Kopia launchera obejmuje paczkę: mody i konfiguracje. Światy i postacie zabezpiecz osobno — przywrócenie paczki nie cofa zapisów gry. Są one wspólne dla wszystkich profili.
 
 ## Automatyczne kopie paczki
 
@@ -28,7 +28,7 @@ Po cofnięciu automatyczne aktualizacje zostają wyłączone, żeby launcher od 
 
 Przed zmianą zainstalowanej paczki launcher tworzy osobną kopię plików objętych ochroną, np. znaczników mapy zapisanych przez mod.
 
-- Zachowuje do **10 ostatnich kopii**, osobno dla stabilnej paczki i bety.
+- Zachowuje do **10 ostatnich kopii**, osobno dla stabilnej paczki i bety (profilu beta).
 - Przy kolejnej udanej zmianie paczki najstarsza kopia wypada z historii.
 - Aktualizacja nie nadpisuje ani nie usuwa chronionych plików aktywnej paczki.
 
